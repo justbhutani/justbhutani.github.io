@@ -9,36 +9,21 @@
 
 	  gtag('config', 'UA-116732641-1');
 	</script>
-    	<style>
-		.fb-customerchat {
-			position: fixed;
-			top:0;
-			left:0;
+	<style>
+		.container {
+			background: black;
+			width: 50%;
+			position: absolute;
+			bottom: 10%;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
 		}
 	</style>
     <title>Hungry? Me too!</title>
   </head>
   <body>
-	  
-	<!-- <script> -->
-	  <!-- window.fbAsyncInit = function() { -->
-		<!-- FB.init({ -->
-		  <!-- appId            : '1656724691029820', -->
-		  <!-- autoLogAppEvents : true, -->
-		  <!-- xfbml            : true, -->
-		  <!-- version          : 'v2.12' -->
-		<!-- }); -->
-	  <!-- }; -->
-
-	  <!-- (function(d, s, id){ -->
-		 <!-- var js, fjs = d.getElementsByTagName(s)[0]; -->
-		 <!-- if (d.getElementById(id)) {return;} -->
-		 <!-- js = d.createElement(s); js.id = id; -->
-		 <!-- js.src = "https://connect.facebook.net/en_US/sdk.js"; -->
-		 <!-- fjs.parentNode.insertBefore(js, fjs); -->
-	   <!-- }(document, 'script', 'facebook-jssdk')); -->
-	<!-- </script> -->
-    <h1>Hi there!</h1>
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -47,14 +32,18 @@
 	  js = d.createElement(s); js.id = id;
 	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
 	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-	<!-- Your customer chat code -->
-	<div class="fb-customerchat"
-	  page_id="1283505328481392"
-	  theme_color="#ffc300"
-	  logged_in_greeting="Hungry? What street / ave?"
-	  logged_out_greeting="Hungry? What street / ave?">
+	}(document, 'script', 'facebook-jssdk'));</script>  
+	
+    <h1>Hello there!</h1>
+	<div class="container">
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+		  page_id="1283505328481392"
+		  theme_color="#ffc300"
+		  logged_in_greeting="Hungry? What street / ave?"
+		  logged_out_greeting="Hungry? What street / ave?">
+		</div>
 	</div>
+	
   </body>
 </html>
