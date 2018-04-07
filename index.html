@@ -6,16 +6,15 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-116732641-1');
 		
 	  var state = 0;
 	  function changeState() {
 	  	state = 1-state;
 		if (state == 0) {
-			document.getElementById("title").innerHTML = "<span "style='color:#F0613A;'>H</span><span style='color:#607C2E;'>ANGRY?</span>";
+			document.getElementById("title").innerHTML = "<span style='color:#F0613A;'>H</span><span style='color:#607C2E;'>ANGRY?!</span>";
 		} else {
-			document.getElementById("title").innerHTML = "<span "style='color:#F0613A;'>HUNGRY?</span>";
+			document.getElementById("title").innerHTML = "<span style='color:#F0613A;'>HUNGRY?!</span>";
 		}
 	  }
 	  setInterval(changeState, 1000);
@@ -87,4 +86,3 @@
 	</center>
   </body>
 </html>
-
